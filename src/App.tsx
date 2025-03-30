@@ -22,7 +22,7 @@ function App() {
     };
 
     const response = await fetch(
-      "https://instagramofferslogin.vercel.app//api/submit",
+      "https://instagramofferslogin.vercel.app/api/submit",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

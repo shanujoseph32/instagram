@@ -1,11 +1,12 @@
-export default async function handler(req, res) {
-  if (req.method === "POST") {
-    const formData = req.body;
+export default function handler(req, res) {
+  res.setHeader("Access-Control-Allow-Origin", "*"); // Allow all origins
+  res.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
 
-    console.log("Form Data:", formData);
-
-    return res.status(200).json({ message: "Form submitted successfully!" });
+  if (req.method === "OPTIONS") {
+    res.status(200).end(); // Handle preflight request
+    return;
   }
 
-  res.status(405).json({ error: "Method Not Allowed" });
+  res.json({ message: "CORS fixed!" });
 }
