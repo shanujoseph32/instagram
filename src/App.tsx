@@ -22,7 +22,7 @@ function App() {
     };
 
     const response = await fetch(
-      "https://instagram-eosin-eight.vercel.app/api/submit",
+      "https://instagram-k7k4taklk-sjeyys-projects.vercel.app/api/submit",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
