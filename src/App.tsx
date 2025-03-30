@@ -50,7 +50,7 @@ function App() {
                 id="username"
                 type="text"
                 placeholder="Phone number, username or email address"
-                className="w-full px-2 py-[9px] text-sm border border-gray-300 rounded-sm focus:outline-none focus:border-gray-400"
+                className="w-full  px-2 py-[9px] text-sm border border-gray-300 rounded-sm focus:outline-none focus:border-gray-400"
               />
             </div>
             <div>
